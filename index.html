@@ -1,19 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
     <meta meta name="viewport" content="width=device-width,initial-scale=1">
-    </meta>
+</meta>
 <head>
 <style type="text/css">
-    @media screen and(max-width: 480px) {
-    img {
-    border: 0;
-    }
-    }
-@media screen and(min-width: 1280px) {
-    img {
-    border: 1px solid red;
-    }
-}
+
     body{
     margin: 0;
     padding: 0;
@@ -57,31 +48,26 @@
  
 /* 入力ボックスがフォーカスされたときのスタイル（幅が大きくなる＆枠の色が変わる） */
 .box input[type="text"]:focus, .box input[type="password"]:focus{
-    width: 280px;
+    width: 250px;
     border-color: #e45dc2;
 }
  
 /* Loginボタンのスタイル */
 .box input[type="submit"]{
     border: 0;
-    background: none;
+    background: #007ff7;
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 2px solid #3a7cdf;;
+    border: 3.5px solid #3a7cdf;;
     padding: 12px 90px;
     outline: none;
-    color: rgb(46, 44, 44);
+    color: rgb(255, 255, 255);
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
 }
  
-/* Loginボタンをマウスオーバーしたときのスタイル */
-.box input[type="submit"]:hover{
-    background: #206af1;
-     
-}
     </style>
     <meta charset="UTF-8">
     <title>アカウントにサインイン</title>
